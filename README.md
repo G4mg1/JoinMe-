@@ -17,7 +17,8 @@ if getgenv().ws then
 end
 
 -- StarterGui.GameHopper
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
+G2L["1"].ResetOnSpawn = false;
 G2L["1"]["Name"] = [[GameHopper]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
